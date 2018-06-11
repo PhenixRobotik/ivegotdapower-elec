@@ -1,4 +1,246 @@
-EESchema Schematic File Version 2
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 26 0
 EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5B1DAA15
+P 1500 1500
+F 0 "J?" H 1600 1500 50  0000 C CNN
+F 1 "Batt_power" H 1750 1400 50  0000 C CNN
+F 2 "" H 1500 1500 50  0001 C CNN
+F 3 "~" H 1500 1500 50  0001 C CNN
+	1    1500 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x07 J?
+U 1 1 5B1DAAA4
+P 1500 2000
+F 0 "J?" H 1600 1800 50  0000 C CNN
+F 1 "Batt_Equilibrage" H 1850 1700 50  0000 C CNN
+F 2 "" H 1500 2000 50  0001 C CNN
+F 3 "~" H 1500 2000 50  0001 C CNN
+	1    1500 2000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5B1DABB3
+P 1500 1200
+F 0 "J?" H 1600 1200 50  0000 C CNN
+F 1 "Labo_power" H 1750 1100 50  0000 C CNN
+F 2 "" H 1500 1200 50  0001 C CNN
+F 3 "~" H 1500 1200 50  0001 C CNN
+	1    1500 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:Fuse F?
+U 1 1 5B1DADFC
+P 2550 1150
+F 0 "F?" V 2353 1150 50  0000 C CNN
+F 1 "Fuse" V 2444 1150 50  0000 C CNN
+F 2 "" V 2480 1150 50  0001 C CNN
+F 3 "~" H 2550 1150 50  0001 C CNN
+	1    2550 1150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5B1DAEE0
+P 2850 1150
+F 0 "D?" H 2850 934 50  0000 C CNN
+F 1 "D" H 2850 1025 50  0000 C CNN
+F 2 "" H 2850 1150 50  0001 C CNN
+F 3 "~" H 2850 1150 50  0001 C CNN
+	1    2850 1150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Regulator_Linear:LM1084-ADJ U?
+U 1 1 5B1DB500
+P 6350 1350
+F 0 "U?" H 6350 1592 50  0000 C CNN
+F 1 "LM1084-ADJ" H 6350 1501 50  0000 C CNN
+F 2 "" H 6350 1600 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm1084.pdf" H 6350 1350 50  0001 C CNN
+	1    6350 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B1DB5C3
+P 5950 1500
+F 0 "C?" H 5750 1550 50  0000 L CNN
+F 1 "10u" H 5700 1450 50  0000 L CNN
+F 2 "" H 5988 1350 50  0001 C CNN
+F 3 "~" H 5950 1500 50  0001 C CNN
+	1    5950 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5B1DB66C
+P 6750 1500
+F 0 "R?" H 6600 1550 50  0000 L CNN
+F 1 "120" H 6550 1450 50  0000 L CNN
+F 2 "" V 6680 1500 50  0001 C CNN
+F 3 "~" H 6750 1500 50  0001 C CNN
+	1    6750 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5B1DB792
+P 6350 1800
+F 0 "RV?" H 6280 1846 50  0000 R CNN
+F 1 "R_POT" H 6280 1755 50  0000 R CNN
+F 2 "" H 6350 1800 50  0001 C CNN
+F 3 "~" H 6350 1800 50  0001 C CNN
+	1    6350 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1350 6050 1350
+Wire Wire Line
+	6650 1350 6750 1350
+Wire Wire Line
+	6750 1650 6350 1650
+Connection ~ 6350 1650
+$Comp
+L power:GND #PWR?
+U 1 1 5B1DB932
+P 6350 1950
+F 0 "#PWR?" H 6350 1700 50  0001 C CNN
+F 1 "GND" H 6355 1777 50  0000 C CNN
+F 2 "" H 6350 1950 50  0001 C CNN
+F 3 "" H 6350 1950 50  0001 C CNN
+	1    6350 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B1DB9DC
+P 6950 1500
+F 0 "C?" H 7050 1550 50  0000 L CNN
+F 1 "10u" H 7050 1450 50  0000 L CNN
+F 2 "" H 6988 1350 50  0001 C CNN
+F 3 "~" H 6950 1500 50  0001 C CNN
+	1    6950 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B1DBA46
+P 5950 1650
+F 0 "#PWR?" H 5950 1400 50  0001 C CNN
+F 1 "GND" H 5850 1550 50  0000 C CNN
+F 2 "" H 5950 1650 50  0001 C CNN
+F 3 "" H 5950 1650 50  0001 C CNN
+	1    5950 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B1DBA65
+P 6950 1650
+F 0 "#PWR?" H 6950 1400 50  0001 C CNN
+F 1 "GND" H 6850 1550 50  0000 C CNN
+F 2 "" H 6950 1650 50  0001 C CNN
+F 3 "" H 6950 1650 50  0001 C CNN
+	1    6950 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1350 6950 1350
+Connection ~ 6750 1350
+Wire Wire Line
+	6950 1350 7200 1350
+Connection ~ 6950 1350
+Text Label 7200 1350 0    50   ~ 0
+Out_Elec
+Text Label 5950 1350 2    50   ~ 0
+In_Elec
+Text Label 4750 3400 1    50   ~ 0
+Out_Elec
+$Comp
+L Device:R R?
+U 1 1 5B1DC9B6
+P 4750 3550
+F 0 "R?" H 4820 3596 50  0000 L CNN
+F 1 "R" H 4820 3505 50  0000 L CNN
+F 2 "" V 4680 3550 50  0001 C CNN
+F 3 "~" H 4750 3550 50  0001 C CNN
+	1    4750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5B1DCA62
+P 4750 3850
+F 0 "D?" V 4788 3733 50  0000 R CNN
+F 1 "LED" V 4697 3733 50  0000 R CNN
+F 2 "" H 4750 3850 50  0001 C CNN
+F 3 "~" H 4750 3850 50  0001 C CNN
+	1    4750 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B1DCB4E
+P 4750 4050
+F 0 "#PWR?" H 4750 3800 50  0001 C CNN
+F 1 "GND" H 4755 3877 50  0000 C CNN
+F 2 "" H 4750 4050 50  0001 C CNN
+F 3 "" H 4750 4050 50  0001 C CNN
+	1    4750 4050
+	1    0    0    -1  
+$EndComp
+Text Label 5300 3400 1    50   ~ 0
+Out_High
+$Comp
+L Device:R R?
+U 1 1 5B1DCBE5
+P 5300 3550
+F 0 "R?" H 5370 3596 50  0000 L CNN
+F 1 "R" H 5370 3505 50  0000 L CNN
+F 2 "" V 5230 3550 50  0001 C CNN
+F 3 "~" H 5300 3550 50  0001 C CNN
+	1    5300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5B1DCBEB
+P 5300 3850
+F 0 "D?" V 5338 3733 50  0000 R CNN
+F 1 "LED" V 5247 3733 50  0000 R CNN
+F 2 "" H 5300 3850 50  0001 C CNN
+F 3 "~" H 5300 3850 50  0001 C CNN
+	1    5300 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B1DCBF1
+P 5300 4050
+F 0 "#PWR?" H 5300 3800 50  0001 C CNN
+F 1 "GND" H 5305 3877 50  0000 C CNN
+F 2 "" H 5300 4050 50  0001 C CNN
+F 3 "" H 5300 4050 50  0001 C CNN
+	1    5300 4050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

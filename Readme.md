@@ -11,7 +11,6 @@ Carte alimentation de PhenixRobotik pour la base roulante TheySeeMeRolling.
 
 * stm32f3
   * Voltage + current instrumentations
-  * 
 
 
 * IOs :
@@ -29,3 +28,4 @@ Carte alimentation de PhenixRobotik pour la base roulante TheySeeMeRolling.
   * UART ?
   * JTAG debug
 
+* Bouton d'arrêt d'urgence qui coupe la puissance moteurs ?
