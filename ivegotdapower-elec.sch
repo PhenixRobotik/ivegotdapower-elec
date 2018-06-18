@@ -100,7 +100,7 @@ F 1 "R_POT" H 8630 1305 50  0000 R CNN
 F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical" H 8700 1350 50  0001 C CNN
 F 3 "~" H 8700 1350 50  0001 C CNN
 	1    8700 1350
-	1    0    0    -1  
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	8300 900  8400 900 
@@ -108,7 +108,6 @@ Wire Wire Line
 	9000 900  9100 900 
 Wire Wire Line
 	9100 1200 8700 1200
-Connection ~ 8700 1200
 $Comp
 L power:GND #PWR0101
 U 1 1 5B1DB932
@@ -234,7 +233,7 @@ F 3 "" H 10450 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PhoenixRobotik:LTC4353 U1
+L PhoenixRobotik:LTC4353_MSOP U1
 U 1 1 5B218EC6
 P 6300 1200
 F 0 "U1" H 6600 1650 50  0000 C CNN
@@ -356,22 +355,6 @@ Wire Wire Line
 Wire Wire Line
 	6300 1950 6500 1950
 Connection ~ 6500 1950
-Wire Wire Line
-	6200 1700 6200 1950
-Wire Wire Line
-	6200 1950 6300 1950
-Connection ~ 6300 1950
-$Comp
-L Transistor_FET:IRF40DM229 Q2
-U 1 1 5B21B503
-P 7000 1300
-F 0 "Q2" H 7205 1346 50  0000 L CNN
-F 1 "IRF40DM229" H 7205 1255 50  0000 L CNN
-F 2 "Package_DirectFET:DirectFET_MF" H 7000 1300 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF40DM229-DS-v02_00-EN.pdf?fileId=5546d462557e6e890155a15c899160ea" H 7000 1300 50  0001 L CNN
-	1    7000 1300
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:C C5
 U 1 1 5B21ED2E
@@ -384,10 +367,7 @@ F 3 "~" H 6950 1000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6800 1100 7100 1100
-Wire Wire Line
 	7100 1100 7100 1000
-Connection ~ 7100 1100
 Wire Wire Line
 	6300 700  6350 700 
 Wire Wire Line
@@ -398,8 +378,6 @@ Wire Wire Line
 	6800 1400 6950 1400
 Wire Wire Line
 	6950 1400 6950 1500
-Wire Wire Line
-	6950 1500 7100 1500
 $Comp
 L power:GND #PWR05
 U 1 1 5B2217E9
@@ -410,17 +388,6 @@ F 2 "" H 5800 900 50  0001 C CNN
 F 3 "" H 5800 900 50  0001 C CNN
 	1    5800 900 
 	1    0    0    1   
-$EndComp
-$Comp
-L Transistor_FET:IRF40DM229 Q1
-U 1 1 5B2217EF
-P 5600 1300
-F 0 "Q1" H 5805 1346 50  0000 L CNN
-F 1 "IRF40DM229" H 5805 1255 50  0000 L CNN
-F 2 "Package_DirectFET:DirectFET_MF" H 5600 1300 50  0001 C CIN
-F 3 "https://www.infineon.com/dgdl/Infineon-IRF40DM229-DS-v02_00-EN.pdf?fileId=5546d462557e6e890155a15c899160ea" H 5600 1300 50  0001 L CNN
-	1    5600 1300
-	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:C C3
@@ -437,7 +404,6 @@ Wire Wire Line
 	5800 1100 5500 1100
 Wire Wire Line
 	5500 1100 5500 1000
-Connection ~ 5500 1100
 Wire Wire Line
 	5800 1400 5650 1400
 Wire Wire Line
@@ -458,8 +424,6 @@ Wire Wire Line
 	5500 1500 5500 2200
 Wire Wire Line
 	7100 2200 7100 1500
-Connection ~ 5500 1500
-Connection ~ 7100 1500
 Text Label 6250 2350 0    50   ~ 0
 PowerInput
 Wire Notes Line
@@ -673,4 +637,35 @@ Wire Wire Line
 Connection ~ 2500 1100
 Wire Wire Line
 	2500 1100 2700 1100
+Connection ~ 8700 1200
+$Comp
+L Transistor_FET:IRF3205 Q1
+U 1 1 5B279326
+P 5600 1300
+F 0 "Q1" H 5806 1254 50  0000 L CNN
+F 1 "IRF3205" H 5806 1345 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 5850 1225 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf3205.pdf" H 5600 1300 50  0001 L CNN
+	1    5600 1300
+	-1   0    0    1   
+$EndComp
+Connection ~ 5500 1500
+Connection ~ 5500 1100
+$Comp
+L Transistor_FET:IRF3205 Q2
+U 1 1 5B279560
+P 7000 1300
+F 0 "Q2" H 7206 1254 50  0000 L CNN
+F 1 "IRF3205" H 7206 1345 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7250 1225 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf3205.pdf" H 7000 1300 50  0001 L CNN
+	1    7000 1300
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6800 1100 7100 1100
+Connection ~ 7100 1500
+Connection ~ 7100 1100
+Wire Wire Line
+	6950 1500 7100 1500
 $EndSCHEMATC
