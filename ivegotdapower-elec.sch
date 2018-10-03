@@ -185,14 +185,16 @@ $EndComp
 Wire Wire Line
 	4500 4450 4400 4450
 $Comp
-L power:+3V3 #PWR0103
-U 1 1 5BC2F654
+L power:+3.3V #PWR?
+U 1 1 5BC72874
 P 4400 4650
-F 0 "#PWR0103" H 4400 4500 50  0001 C CNN
-F 1 "+3V3" V 4415 4778 50  0000 L CNN
+F 0 "#PWR?" H 4400 4500 50  0001 C CNN
+F 1 "+3.3V" V 4415 4778 50  0000 L CNN
 F 2 "" H 4400 4650 50  0001 C CNN
 F 3 "" H 4400 4650 50  0001 C CNN
 	1    4400 4650
 	0    1    1    0   
 $EndComp
+Text Notes 3450 1900 0    50   ~ 0
+emergency stop on battery wires
 $EndSCHEMATC
