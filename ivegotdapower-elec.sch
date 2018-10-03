@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:ivegotdapower-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -185,10 +186,10 @@ $EndComp
 Wire Wire Line
 	4500 4450 4400 4450
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0103
 U 1 1 5BC72874
 P 4400 4650
-F 0 "#PWR?" H 4400 4500 50  0001 C CNN
+F 0 "#PWR0103" H 4400 4500 50  0001 C CNN
 F 1 "+3.3V" V 4415 4778 50  0000 L CNN
 F 2 "" H 4400 4650 50  0001 C CNN
 F 3 "" H 4400 4650 50  0001 C CNN
