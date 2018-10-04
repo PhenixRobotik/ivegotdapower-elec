@@ -33,12 +33,12 @@ $EndComp
 $Comp
 L Device:Fuse F6
 U 1 1 5BBB7917
-P 3350 2600
-F 0 "F6" V 3153 2600 50  0000 C CNN
-F 1 "Fuse" V 3244 2600 50  0000 C CNN
-F 2 "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3280 2600 50  0001 C CNN
-F 3 "~" H 3350 2600 50  0001 C CNN
-	1    3350 2600
+P 3050 2600
+F 0 "F6" V 2853 2600 50  0000 C CNN
+F 1 "Fuse" V 2944 2600 50  0000 C CNN
+F 2 "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2980 2600 50  0001 C CNN
+F 3 "~" H 3050 2600 50  0001 C CNN
+	1    3050 2600
 	0    1    1    0   
 $EndComp
 $Comp
@@ -75,8 +75,6 @@ F 4 "545-3162" V 4400 2850 50  0001 C CNN "RS"
 	1    4400 2850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2750 2600 3200 2600
 Wire Wire Line
 	4100 2600 4400 2600
 Wire Wire Line
@@ -134,12 +132,12 @@ $EndComp
 $Comp
 L Device:Fuse F7
 U 1 1 5BBB85D0
-P 3350 4000
-F 0 "F7" V 3153 4000 50  0000 C CNN
-F 1 "Fuse" V 3244 4000 50  0000 C CNN
-F 2 "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3280 4000 50  0001 C CNN
-F 3 "~" H 3350 4000 50  0001 C CNN
-	1    3350 4000
+P 3050 4000
+F 0 "F7" V 2853 4000 50  0000 C CNN
+F 1 "Fuse" V 2944 4000 50  0000 C CNN
+F 2 "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2980 4000 50  0001 C CNN
+F 3 "~" H 3050 4000 50  0001 C CNN
+	1    3050 4000
 	0    1    1    0   
 $EndComp
 $Comp
@@ -176,8 +174,6 @@ F 4 "545-3162" V 4400 4250 50  0001 C CNN "RS"
 	1    4400 4250
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2750 4000 3200 4000
 Wire Wire Line
 	4100 4000 4400 4000
 Wire Wire Line
@@ -371,10 +367,6 @@ F 3 "" H 5900 5500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3500 4000 3700 4000
-Wire Wire Line
-	3500 2600 3700 2600
-Wire Wire Line
 	5850 3250 5850 3150
 Connection ~ 5850 3150
 Wire Wire Line
@@ -430,4 +422,70 @@ Wire Wire Line
 Connection ~ 6300 3600
 Wire Wire Line
 	6300 3600 6300 3550
+$Comp
+L Device:Varistor RV?
+U 1 1 5BB7D863
+P 3350 4250
+F 0 "RV?" H 3453 4296 50  0000 L CNN
+F 1 "Varistor" H 3453 4205 50  0000 L CNN
+F 2 "" V 3280 4250 50  0001 C CNN
+F 3 "~" H 3350 4250 50  0001 C CNN
+	1    3350 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Varistor RV?
+U 1 1 5BB7EF45
+P 3350 2800
+F 0 "RV?" H 3453 2846 50  0000 L CNN
+F 1 "Varistor" H 3453 2755 50  0000 L CNN
+F 2 "" V 3280 2800 50  0001 C CNN
+F 3 "~" H 3350 2800 50  0001 C CNN
+	1    3350 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BB80640
+P 3350 4450
+F 0 "#PWR?" H 3350 4200 50  0001 C CNN
+F 1 "GND" H 3355 4277 50  0000 C CNN
+F 2 "" H 3350 4450 50  0001 C CNN
+F 3 "" H 3350 4450 50  0001 C CNN
+	1    3350 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BB80676
+P 3350 3050
+F 0 "#PWR?" H 3350 2800 50  0001 C CNN
+F 1 "GND" H 3355 2877 50  0000 C CNN
+F 2 "" H 3350 3050 50  0001 C CNN
+F 3 "" H 3350 3050 50  0001 C CNN
+	1    3350 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 2600 2900 2600
+Wire Wire Line
+	3200 2600 3350 2600
+Wire Wire Line
+	3350 2650 3350 2600
+Connection ~ 3350 2600
+Wire Wire Line
+	3350 2600 3700 2600
+Wire Wire Line
+	3350 3050 3350 2950
+Wire Wire Line
+	2750 4000 2900 4000
+Wire Wire Line
+	3700 4000 3350 4000
+Wire Wire Line
+	3350 4100 3350 4000
+Connection ~ 3350 4000
+Wire Wire Line
+	3350 4000 3200 4000
+Wire Wire Line
+	3350 4450 3350 4400
 $EndSCHEMATC
