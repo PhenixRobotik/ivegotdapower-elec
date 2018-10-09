@@ -267,28 +267,17 @@ Wire Wire Line
 	7200 2650 7200 2600
 Connection ~ 7200 2600
 $Comp
-L Device:Jumper_NC_Dual JP1
-U 1 1 5BBC817D
-P 3850 3100
-F 0 "JP1" H 3850 3246 50  0000 C CNN
-F 1 "Jumper_NC_Dual" H 3850 3337 50  0000 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3850 3100 50  0001 C CNN
-F 3 "~" H 3850 3100 50  0001 C CNN
-	1    3850 3100
-	-1   0    0    1   
-$EndComp
-$Comp
 L power:GND #PWR0108
 U 1 1 5BBC8185
-P 4100 3100
-F 0 "#PWR0108" H 4100 2850 50  0001 C CNN
-F 1 "GND" H 4105 2927 50  0000 C CNN
-F 2 "" H 4100 3100 50  0001 C CNN
-F 3 "" H 4100 3100 50  0001 C CNN
-	1    4100 3100
+P 3850 3100
+F 0 "#PWR0108" H 3850 2850 50  0001 C CNN
+F 1 "GND" H 3855 2927 50  0000 C CNN
+F 2 "" H 3850 3100 50  0001 C CNN
+F 3 "" H 3850 3100 50  0001 C CNN
+	1    3850 3100
 	1    0    0    -1  
 $EndComp
-Text Label 3300 3100 2    50   ~ 0
+Text Label 3850 2800 2    50   ~ 0
 on-off
 $Comp
 L Device:R R4
@@ -351,10 +340,6 @@ Text Label 2000 2750 0    50   ~ 0
 on-off
 Text Label 3250 2400 2    50   ~ 0
 Power_Input
-Wire Wire Line
-	3600 3100 3300 3100
-Wire Wire Line
-	3850 3000 3850 2600
 Wire Wire Line
 	7200 2950 7200 3150
 Wire Wire Line
@@ -441,4 +426,17 @@ Wire Wire Line
 Wire Wire Line
 	2000 2550 2000 2650
 Connection ~ 1500 2650
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5BBD2379
+P 3850 2950
+F 0 "JP1" V 3850 3050 50  0000 C CNN
+F 1 "SolderJumper_2_Open" V 4000 2950 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3850 2950 50  0001 C CNN
+F 3 "~" H 3850 2950 50  0001 C CNN
+	1    3850 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 2600 3850 2800
 $EndSCHEMATC
