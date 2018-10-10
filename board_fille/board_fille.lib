@@ -1,0 +1,26 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# board_fille
+#
+DEF board_fille B 0 40 Y Y 1 F N
+F0 "B" 0 300 50 H V C CNN
+F1 "board_fille" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S 0 -195 50 -205 1 1 6 N
+S 0 -95 50 -105 1 1 6 N
+S 0 5 50 -5 1 1 6 N
+S 0 105 50 95 1 1 6 N
+S 0 205 50 195 1 1 6 N
+S 0 250 100 -250 1 1 10 f
+X GND 1 -150 200 150 R 50 50 1 1 P
+X V_in 2 -150 100 150 R 50 50 1 1 P
+X En 3 -150 0 150 R 50 50 1 1 P
+X V_out 4 -150 -100 150 R 50 50 1 1 P
+X Meas 5 -150 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+#End Library
