@@ -63,24 +63,24 @@ $EndSheet
 $Comp
 L Connector_Generic:Conn_01x02 J2
 U 1 1 5BBADC39
-P 4400 2250
-F 0 "J2" H 4320 2467 50  0000 C CNN
-F 1 "Conn_batt" H 4320 2376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4400 2250 50  0001 C CNN
-F 3 "~" H 4400 2250 50  0001 C CNN
-	1    4400 2250
-	-1   0    0    -1  
+P 4400 2350
+F 0 "J2" H 4320 2567 50  0000 C CNN
+F 1 "Conn_batt" H 4320 2476 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 4400 2350 50  0001 C CNN
+F 3 "~" H 4400 2350 50  0001 C CNN
+	1    4400 2350
+	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J3
 U 1 1 5BBADD52
-P 4400 2800
-F 0 "J3" H 4320 3017 50  0000 C CNN
-F 1 "Conn_alim" H 4320 2926 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4400 2800 50  0001 C CNN
-F 3 "~" H 4400 2800 50  0001 C CNN
-	1    4400 2800
-	-1   0    0    -1  
+P 4400 2900
+F 0 "J3" H 4320 3117 50  0000 C CNN
+F 1 "Conn_alim" H 4320 3026 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 4400 2900 50  0001 C CNN
+F 3 "~" H 4400 2900 50  0001 C CNN
+	1    4400 2900
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4750 2350 4600 2350
@@ -108,81 +108,12 @@ Wire Wire Line
 Wire Wire Line
 	6600 3950 6550 3950
 $Comp
-L Connector_Generic:Conn_01x08 J1
-U 1 1 5BC26294
-P 4200 4350
-F 0 "J1" H 4120 3725 50  0000 C CNN
-F 1 "Conn_01x08" H 4120 3816 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-08A_1x08_P2.54mm_Vertical" H 4200 4350 50  0001 C CNN
-F 3 "~" H 4200 4350 50  0001 C CNN
-	1    4200 4350
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4400 3950 5200 3950
-Wire Wire Line
-	4400 4050 5200 4050
-NoConn ~ 4400 4150
-$Comp
-L Device:Jumper_NC_Small JP1
-U 1 1 5BC29B99
-P 4750 4250
-F 0 "JP1" H 4750 4462 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 4750 4371 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 4750 4250 50  0001 C CNN
-F 3 "~" H 4750 4250 50  0001 C CNN
-	1    4750 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 4250 4650 4250
-Wire Wire Line
-	4850 4250 4850 4400
-Wire Wire Line
-	4850 4400 5200 4400
-Wire Wire Line
-	4400 4550 5000 4550
-Wire Wire Line
-	5000 4550 5000 4200
-Wire Wire Line
-	5000 4200 5200 4200
-Wire Wire Line
-	5200 4300 4600 4300
-Wire Wire Line
-	4600 4300 4600 4350
-Wire Wire Line
-	4600 4350 4400 4350
-$Comp
-L power:GND #PWR0102
-U 1 1 5BC2E0B9
-P 4500 4450
-F 0 "#PWR0102" H 4500 4200 50  0001 C CNN
-F 1 "GND" V 4505 4322 50  0000 R CNN
-F 2 "" H 4500 4450 50  0001 C CNN
-F 3 "" H 4500 4450 50  0001 C CNN
-	1    4500 4450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4500 4450 4400 4450
-$Comp
-L power:+3.3V #PWR0103
-U 1 1 5BC72874
-P 4400 4650
-F 0 "#PWR0103" H 4400 4500 50  0001 C CNN
-F 1 "+3.3V" V 4415 4778 50  0000 L CNN
-F 2 "" H 4400 4650 50  0001 C CNN
-F 3 "" H 4400 4650 50  0001 C CNN
-	1    4400 4650
-	0    1    1    0   
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x02 J11
 U 1 1 5BB720D6
 P 9450 2800
 F 0 "J11" H 9529 2792 50  0000 L CNN
 F 1 "Conn_bau" H 9529 2701 50  0000 L CNN
-F 2 "" H 9450 2800 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 9450 2800 50  0001 C CNN
 F 3 "~" H 9450 2800 50  0001 C CNN
 	1    9450 2800
 	1    0    0    -1  
@@ -204,7 +135,7 @@ U 1 1 5BB739E1
 P 9150 3100
 F 0 "R16" H 9220 3146 50  0000 L CNN
 F 1 "1k" H 9220 3055 50  0000 L CNN
-F 2 "" V 9080 3100 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9080 3100 50  0001 C CNN
 F 3 "~" H 9150 3100 50  0001 C CNN
 	1    9150 3100
 	1    0    0    -1  
@@ -274,4 +205,79 @@ Wire Wire Line
 	7350 2900 7350 4650
 Wire Wire Line
 	7350 4650 6550 4650
+$Comp
+L PhoenixRobotik:Conn_Debug J1
+U 1 1 5BD07D64
+P 4400 4150
+F 0 "J1" H 4630 4048 50  0000 L CNN
+F 1 "Conn_Debug" H 4630 4139 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B6B-PH-K_1x06_P2.00mm_Vertical" H 4800 2850 50  0001 C CNN
+F 3 "~" H 6600 3950 50  0001 C CNN
+	1    4400 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 3950 5200 3950
+Wire Wire Line
+	5200 4050 4700 4050
+Wire Wire Line
+	4700 4350 5050 4350
+Wire Wire Line
+	5050 4350 5050 4200
+Wire Wire Line
+	5050 4200 5200 4200
+Wire Wire Line
+	5200 4300 4700 4300
+Wire Wire Line
+	4700 4300 4700 4250
+Wire Wire Line
+	4700 4550 5100 4550
+Wire Wire Line
+	5100 4550 5100 4400
+Wire Wire Line
+	5100 4400 5200 4400
+$Comp
+L power:GND #PWR0102
+U 1 1 5BD0B895
+P 4400 3550
+F 0 "#PWR0102" H 4400 3300 50  0001 C CNN
+F 1 "GND" H 4405 3377 50  0000 C CNN
+F 2 "" H 4400 3550 50  0001 C CNN
+F 3 "" H 4400 3550 50  0001 C CNN
+	1    4400 3550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5BD40E27
+P 6100 5700
+F 0 "H1" H 6200 5746 50  0000 L CNN
+F 1 "MountingHole" H 6200 5655 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6100 5700 50  0001 C CNN
+F 3 "~" H 6100 5700 50  0001 C CNN
+	1    6100 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5BD40E61
+P 6100 5950
+F 0 "H2" H 6200 5996 50  0000 L CNN
+F 1 "MountingHole" H 6200 5905 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6100 5950 50  0001 C CNN
+F 3 "~" H 6100 5950 50  0001 C CNN
+	1    6100 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5BD40EB9
+P 6100 6200
+F 0 "H3" H 6200 6246 50  0000 L CNN
+F 1 "MountingHole" H 6200 6155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6100 6200 50  0001 C CNN
+F 3 "~" H 6100 6200 50  0001 C CNN
+	1    6100 6200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
