@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ivegotdapower-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -269,15 +268,15 @@ Connection ~ 7200 2600
 $Comp
 L power:GND #PWR0108
 U 1 1 5BBC8185
-P 3850 3100
-F 0 "#PWR0108" H 3850 2850 50  0001 C CNN
-F 1 "GND" H 3855 2927 50  0000 C CNN
-F 2 "" H 3850 3100 50  0001 C CNN
-F 3 "" H 3850 3100 50  0001 C CNN
-	1    3850 3100
-	1    0    0    -1  
+P 4050 3450
+F 0 "#PWR0108" H 4050 3200 50  0001 C CNN
+F 1 "GND" H 4055 3277 50  0000 C CNN
+F 2 "" H 4050 3450 50  0001 C CNN
+F 3 "" H 4050 3450 50  0001 C CNN
+	1    4050 3450
+	0    -1   -1   0   
 $EndComp
-Text Label 3850 2800 2    50   ~ 0
+Text Label 3650 3450 2    50   ~ 0
 on-off
 $Comp
 L Device:R R4
@@ -427,16 +426,16 @@ Wire Wire Line
 	2000 2550 2000 2650
 Connection ~ 1500 2650
 $Comp
-L Jumper:SolderJumper_2_Open JP1
-U 1 1 5BBD2379
-P 3850 2950
-F 0 "JP1" V 3850 3050 50  0000 C CNN
-F 1 "SolderJumper_2_Open" V 4000 2950 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3850 2950 50  0001 C CNN
-F 3 "~" H 3850 2950 50  0001 C CNN
-	1    3850 2950
-	0    1    1    0   
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 5BD0881D
+P 3850 3450
+F 0 "JP1" H 3850 3562 50  0000 C CNN
+F 1 "SolderJumper_3_Open" H 3850 3653 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3850 3450 50  0001 C CNN
+F 3 "~" H 3850 3450 50  0001 C CNN
+	1    3850 3450
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3850 2600 3850 2800
+	3850 2600 3850 3300
 $EndSCHEMATC
