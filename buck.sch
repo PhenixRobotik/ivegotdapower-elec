@@ -183,6 +183,8 @@ $Comp
 L board_fille:board_fille B1
 U 1 1 5BD2F44D
 P 2650 1200
+AR Path="/5BD2F44D" Ref="B1"  Part="1" 
+AR Path="/5BB4DEC0/5BD2F44D" Ref="B1"  Part="1" 
 F 0 "B1" H 2700 1675 50  0000 C CNN
 F 1 "board_fille" H 2700 1584 50  0000 C CNN
 F 2 "board_fille:board_fille" H 2600 1250 50  0001 C CNN
@@ -264,6 +266,8 @@ $Comp
 L board_fille:board_fille B2
 U 1 1 5BDA6E24
 P 2650 2150
+AR Path="/5BDA6E24" Ref="B2"  Part="1" 
+AR Path="/5BB4DEC0/5BDA6E24" Ref="B2"  Part="1" 
 F 0 "B2" H 2700 2625 50  0000 C CNN
 F 1 "board_fille" H 2700 2534 50  0000 C CNN
 F 2 "board_fille:board_fille" H 2600 2200 50  0001 C CNN
@@ -344,6 +348,8 @@ $Comp
 L board_fille:board_fille B3
 U 1 1 5BDE34E8
 P 2650 3450
+AR Path="/5BDE34E8" Ref="B3"  Part="1" 
+AR Path="/5BB4DEC0/5BDE34E8" Ref="B3"  Part="1" 
 F 0 "B3" H 2700 3925 50  0000 C CNN
 F 1 "board_fille" H 2700 3834 50  0000 C CNN
 F 2 "board_fille:board_fille" H 2600 3500 50  0001 C CNN
@@ -427,6 +433,8 @@ $Comp
 L board_fille:board_fille B4
 U 1 1 5BDF63AD
 P 2650 4700
+AR Path="/5BDF63AD" Ref="B4"  Part="1" 
+AR Path="/5BB4DEC0/5BDF63AD" Ref="B4"  Part="1" 
 F 0 "B4" H 2700 5175 50  0000 C CNN
 F 1 "board_fille" H 2700 5084 50  0000 C CNN
 F 2 "board_fille:board_fille" H 2600 4750 50  0001 C CNN
@@ -521,6 +529,8 @@ $Comp
 L board_fille:board_fille B5
 U 1 1 5BE112C1
 P 2650 6000
+AR Path="/5BE112C1" Ref="B5"  Part="1" 
+AR Path="/5BB4DEC0/5BE112C1" Ref="B5"  Part="1" 
 F 0 "B5" H 2700 6475 50  0000 C CNN
 F 1 "board_fille" H 2700 6384 50  0000 C CNN
 F 2 "board_fille:board_fille" H 2600 6050 50  0001 C CNN
