@@ -19,7 +19,7 @@ Vbatt+
 Text HLabel 2150 4000 0    50   Input ~ 0
 Valim+
 $Comp
-L PhoenixRobotik:IRFR5305 Q1
+L PhenixRobotik:IRFR5305 Q1
 U 1 1 5BBB7787
 P 3900 1650
 F 0 "Q1" V 4243 1650 50  0000 C CNN
@@ -42,7 +42,7 @@ F 3 "~" H 2450 1550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L PhoenixRobotik:IRFR5305 Q2
+L PhenixRobotik:IRFR5305 Q2
 U 1 1 5BBB85C9
 P 3900 4100
 F 0 "Q2" V 4243 4100 50  0000 C CNN

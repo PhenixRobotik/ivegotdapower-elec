@@ -206,7 +206,7 @@ Wire Wire Line
 Wire Wire Line
 	7350 4650 6550 4650
 $Comp
-L PhoenixRobotik:Conn_Debug J1
+L PhenixRobotik:Conn_Debug J1
 U 1 1 5BD07D64
 P 4400 4150
 F 0 "J1" H 4630 4048 50  0000 L CNN

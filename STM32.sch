@@ -960,7 +960,7 @@ CAN_RX
 Text Label 7450 5550 2    50   ~ 0
 CAN_RX
 $Comp
-L PhoenixRobotik:CAN_conn J12
+L PhenixRobotik:CAN_conn J12
 U 1 1 5BD2E9E0
 P 9450 5650
 F 0 "J12" H 9729 5696 50  0000 L CNN
@@ -971,7 +971,7 @@ F 3 "https://github.com/PhenixRobotik/phenix_kicad" H 9750 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PhoenixRobotik:CAN_conn J13
+L PhenixRobotik:CAN_conn J13
 U 1 1 5BD2EA92
 P 10500 5650
 F 0 "J13" H 10779 5696 50  0000 L CNN
