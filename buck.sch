@@ -22,7 +22,7 @@ U 1 1 5BB7105F
 P 3650 6150
 F 0 "J4" H 3730 6142 50  0000 L CNN
 F 1 "Conn_TSMR" H 3730 6051 50  0000 L CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 3650 6150 50  0001 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 3650 6150 50  0001 C CNN
 F 3 "~" H 3650 6150 50  0001 C CNN
 	1    3650 6150
 	1    0    0    1   
@@ -33,7 +33,7 @@ U 1 1 5BB73C6F
 P 3650 1350
 F 0 "J7" H 3729 1342 50  0000 L CNN
 F 1 "Conn_RPi" H 3729 1251 50  0000 L CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 3650 1350 50  0001 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 3650 1350 50  0001 C CNN
 F 3 "~" H 3650 1350 50  0001 C CNN
 	1    3650 1350
 	1    0    0    1   
@@ -55,7 +55,7 @@ U 1 1 5BB77548
 P 3650 3600
 F 0 "J6" H 3730 3592 50  0000 L CNN
 F 1 "Conn_POW1" H 3730 3501 50  0000 L CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 3650 3600 50  0001 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 3650 3600 50  0001 C CNN
 F 3 "~" H 3650 3600 50  0001 C CNN
 	1    3650 3600
 	1    0    0    1   
@@ -66,7 +66,7 @@ U 1 1 5BB7B49A
 P 3650 4850
 F 0 "J5" H 3730 4842 50  0000 L CNN
 F 1 "Conn_POW2" H 3730 4751 50  0000 L CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal" H 3650 4850 50  0001 C CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 3650 4850 50  0001 C CNN
 F 3 "~" H 3650 4850 50  0001 C CNN
 	1    3650 4850
 	1    0    0    1   
@@ -154,8 +154,6 @@ Wire Wire Line
 Connection ~ 5450 4100
 Wire Wire Line
 	5450 4100 5450 4050
-Text Label 2200 1250 2    50   ~ 0
-on-off
 Text HLabel 3200 1150 2    50   Input ~ 0
 RPi_mes
 Text HLabel 3200 5950 2    50   Input ~ 0
@@ -260,8 +258,6 @@ Wire Wire Line
 Connection ~ 3300 950 
 Wire Wire Line
 	3300 950  3300 1050
-Text Label 2200 2200 2    50   ~ 0
-on-off
 $Comp
 L board_fille:board_fille B2
 U 1 1 5BDA6E24
@@ -606,4 +602,56 @@ Wire Wire Line
 Connection ~ 3300 5750
 Wire Wire Line
 	3300 5750 3300 5850
+Text Label 1300 1000 2    50   ~ 0
+on-off
+$Comp
+L Device:Jumper_NC_Dual JP3
+U 1 1 5BDCB7C6
+P 1300 1250
+F 0 "JP3" V 1346 1352 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 1255 1352 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1300 1250 50  0001 C CNN
+F 3 "~" H 1300 1250 50  0001 C CNN
+	1    1300 1250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5BDCB8C6
+P 1300 1500
+F 0 "#PWR0116" H 1300 1250 50  0001 C CNN
+F 1 "GND" H 1305 1327 50  0000 C CNN
+F 2 "" H 1300 1500 50  0001 C CNN
+F 3 "" H 1300 1500 50  0001 C CNN
+	1    1300 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1250 2200 1250
+Text Label 1350 1950 2    50   ~ 0
+on-off
+$Comp
+L Device:Jumper_NC_Dual JP4
+U 1 1 5BDD1463
+P 1350 2200
+F 0 "JP4" V 1396 2302 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 1305 2302 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1350 2200 50  0001 C CNN
+F 3 "~" H 1350 2200 50  0001 C CNN
+	1    1350 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5BDD1469
+P 1350 2450
+F 0 "#PWR0117" H 1350 2200 50  0001 C CNN
+F 1 "GND" H 1355 2277 50  0000 C CNN
+F 2 "" H 1350 2450 50  0001 C CNN
+F 3 "" H 1350 2450 50  0001 C CNN
+	1    1350 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2200 2200 2200
 $EndSCHEMATC
