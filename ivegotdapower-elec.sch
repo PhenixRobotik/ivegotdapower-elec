@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ivegotdapower-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -248,36 +247,55 @@ F 3 "" H 4400 3550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Mechanical:MountingHole H1
-U 1 1 5BD40E27
+L Mechanical:MountingHole_Pad H1
+U 1 1 5BE048B0
 P 6100 5700
-F 0 "H1" H 6200 5746 50  0000 L CNN
-F 1 "MountingHole" H 6200 5655 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6100 5700 50  0001 C CNN
+F 0 "H1" V 6054 5850 50  0000 L CNN
+F 1 "MountingHole_Pad" V 6145 5850 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 6100 5700 50  0001 C CNN
 F 3 "~" H 6100 5700 50  0001 C CNN
 	1    6100 5700
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole H2
-U 1 1 5BD40E61
-P 6100 5950
-F 0 "H2" H 6200 5996 50  0000 L CNN
-F 1 "MountingHole" H 6200 5905 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6100 5950 50  0001 C CNN
-F 3 "~" H 6100 5950 50  0001 C CNN
-	1    6100 5950
-	1    0    0    -1  
+L Mechanical:MountingHole_Pad H2
+U 1 1 5BE0490F
+P 6100 5900
+F 0 "H2" V 6054 6050 50  0000 L CNN
+F 1 "MountingHole_Pad" V 6145 6050 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 6100 5900 50  0001 C CNN
+F 3 "~" H 6100 5900 50  0001 C CNN
+	1    6100 5900
+	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
-U 1 1 5BD40EB9
-P 6100 6200
-F 0 "H3" H 6200 6246 50  0000 L CNN
-F 1 "MountingHole" H 6200 6155 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 6100 6200 50  0001 C CNN
-F 3 "~" H 6100 6200 50  0001 C CNN
-	1    6100 6200
+L Mechanical:MountingHole_Pad H3
+U 1 1 5BE0495C
+P 6100 6100
+F 0 "H3" V 6054 6250 50  0000 L CNN
+F 1 "MountingHole_Pad" V 6145 6250 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 6100 6100 50  0001 C CNN
+F 3 "~" H 6100 6100 50  0001 C CNN
+	1    6100 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 5700 6000 5900
+Connection ~ 6000 5900
+Wire Wire Line
+	6000 5900 6000 6100
+Connection ~ 6000 6100
+Wire Wire Line
+	6000 6100 6000 6250
+$Comp
+L power:GND #PWR?
+U 1 1 5BE0716D
+P 6000 6250
+F 0 "#PWR?" H 6000 6000 50  0001 C CNN
+F 1 "GND" H 6005 6077 50  0000 C CNN
+F 2 "" H 6000 6250 50  0001 C CNN
+F 3 "" H 6000 6250 50  0001 C CNN
+	1    6000 6250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
