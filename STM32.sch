@@ -691,25 +691,25 @@ Wire Wire Line
 Text HLabel 4900 3750 0    50   Input ~ 0
 bau_stm32
 NoConn ~ 4900 3950
-Text HLabel 6150 3050 2    50   Input ~ 0
+Text HLabel 6150 2950 2    50   Input ~ 0
 raw
-Text HLabel 6150 3150 2    50   Input ~ 0
+Text HLabel 6150 3550 2    50   Input ~ 0
 logic
 Wire Wire Line
 	6150 3050 6000 3050
 Wire Wire Line
 	6150 3150 6000 3150
-Text HLabel 6150 2950 2    50   Input ~ 0
-rpi
-Text HLabel 6150 3350 2    50   Input ~ 0
-pow1
 Text HLabel 6150 3450 2    50   Input ~ 0
+rpi
+Text HLabel 6150 3150 2    50   Input ~ 0
+pow1
+Text HLabel 6150 3350 2    50   Input ~ 0
 pow2
 Wire Wire Line
 	6150 3450 6000 3450
 Wire Wire Line
 	6000 3350 6150 3350
-Text HLabel 6150 3550 2    50   Input ~ 0
+Text HLabel 6150 3050 2    50   Input ~ 0
 TSMR
 Wire Wire Line
 	6150 3550 6000 3550
