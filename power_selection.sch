@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:ivegotdapower-elec-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -134,7 +135,7 @@ U 1 1 5BBC5C0B
 P 5850 3750
 F 0 "D12" V 5888 3633 50  0000 R CNN
 F 1 "LED" V 5797 3633 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5850 3750 50  0001 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5850 3750 50  0001 C CNN
 F 3 "~" H 5850 3750 50  0001 C CNN
 	1    5850 3750
 	0    -1   -1   0   
