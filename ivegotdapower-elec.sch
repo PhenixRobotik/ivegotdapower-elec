@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:ivegotdapower-elec-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -45,20 +44,15 @@ S 5200 3850 1350 1000
 U 5BBAA756
 F0 "STM32" 50
 F1 "STM32.sch" 50
-F2 "nrst" I L 5200 4400 50 
-F3 "TMS" I L 5200 4300 50 
-F4 "TCK" I L 5200 4200 50 
-F5 "TX_1" I L 5200 3950 50 
-F6 "RX_1" I L 5200 4050 50 
-F7 "sense" I R 6550 3950 50 
-F8 "sense_fault" I R 6550 4050 50 
-F9 "bau_stm32" I R 6550 4750 50 
-F10 "raw" I R 6550 4150 50 
-F11 "logic" I R 6550 4250 50 
-F12 "rpi" I R 6550 4350 50 
-F13 "pow1" I R 6550 4450 50 
-F14 "pow2" I R 6550 4550 50 
-F15 "TSMR" I R 6550 4650 50 
+F2 "sense" I R 6550 3950 50 
+F3 "sense_fault" I R 6550 4050 50 
+F4 "bau_stm32" I R 6550 4750 50 
+F5 "mes_raw" I R 6550 4150 50 
+F6 "mes_logic" I R 6550 4250 50 
+F7 "mes_rpi" I R 6550 4350 50 
+F8 "mes_pow1" I R 6550 4450 50 
+F9 "mes_pow2" I R 6550 4550 50 
+F10 "mes_TSMR" I R 6550 4650 50 
 $EndSheet
 $Comp
 L Connector_Generic:Conn_01x02 J2
@@ -206,48 +200,6 @@ Wire Wire Line
 Wire Wire Line
 	7350 4650 6550 4650
 $Comp
-L PhenixRobotik:Conn_Debug J1
-U 1 1 5BD07D64
-P 4400 4150
-F 0 "J1" H 4630 4048 50  0000 L CNN
-F 1 "Conn_Debug" H 4630 4139 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S6B-PH-K_1x06_P2.00mm_Horizontal" H 4800 2850 50  0001 C CNN
-F 3 "~" H 6600 3950 50  0001 C CNN
-	1    4400 4150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4700 3950 5200 3950
-Wire Wire Line
-	5200 4050 4700 4050
-Wire Wire Line
-	4700 4350 5050 4350
-Wire Wire Line
-	5050 4350 5050 4200
-Wire Wire Line
-	5050 4200 5200 4200
-Wire Wire Line
-	5200 4300 4700 4300
-Wire Wire Line
-	4700 4300 4700 4250
-Wire Wire Line
-	4700 4550 5100 4550
-Wire Wire Line
-	5100 4550 5100 4400
-Wire Wire Line
-	5100 4400 5200 4400
-$Comp
-L power:GND #PWR0102
-U 1 1 5BD0B895
-P 4400 3550
-F 0 "#PWR0102" H 4400 3300 50  0001 C CNN
-F 1 "GND" H 4405 3377 50  0000 C CNN
-F 2 "" H 4400 3550 50  0001 C CNN
-F 3 "" H 4400 3550 50  0001 C CNN
-	1    4400 3550
-	-1   0    0    1   
-$EndComp
-$Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5BE048B0
 P 6100 5700
@@ -298,5 +250,88 @@ F 2 "" H 6000 6250 50  0001 C CNN
 F 3 "" H 6000 6250 50  0001 C CNN
 	1    6000 6250
 	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DE16D8B
+P 8950 1000
+AR Path="/5BBAA756/5DD62050/5DE16D8B" Ref="#PWR?"  Part="1" 
+AR Path="/5DE16D8B" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 8950 850 50  0001 C CNN
+F 1 "+5V" V 8950 1200 50  0000 C CNN
+F 2 "" H 8950 1000 50  0001 C CNN
+F 3 "" H 8950 1000 50  0001 C CNN
+	1    8950 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5DE16D91
+P 10000 1000
+AR Path="/5BBAA756/5DE16D91" Ref="#PWR?"  Part="1" 
+AR Path="/5BBAA756/5DD62050/5DE16D91" Ref="#PWR?"  Part="1" 
+AR Path="/5DE16D91" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 10000 850 50  0001 C CNN
+F 1 "+3.3V" V 10000 1200 50  0000 C CNN
+F 2 "" H 10000 1000 50  0001 C CNN
+F 3 "" H 10000 1000 50  0001 C CNN
+	1    10000 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5DE16D97
+P 9150 1100
+AR Path="/5BBAA756/5DE16D97" Ref="J?"  Part="1" 
+AR Path="/5BBAA756/5DD62050/5DE16D97" Ref="J?"  Part="1" 
+AR Path="/5DE16D97" Ref="J8"  Part="1" 
+F 0 "J8" H 9150 900 50  0000 C CNN
+F 1 "Conn_+5V" H 9150 1200 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 9150 1100 50  0001 C CNN
+F 3 "~" H 9150 1100 50  0001 C CNN
+	1    9150 1100
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5DE16D9D
+P 10200 1100
+AR Path="/5BBAA756/5DE16D9D" Ref="J?"  Part="1" 
+AR Path="/5BBAA756/5DD62050/5DE16D9D" Ref="J?"  Part="1" 
+AR Path="/5DE16D9D" Ref="J10"  Part="1" 
+F 0 "J10" H 10200 900 50  0000 C CNN
+F 1 "Conn_+3.3V" H 10200 1200 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 10200 1100 50  0001 C CNN
+F 3 "~" H 10200 1100 50  0001 C CNN
+	1    10200 1100
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE16DA3
+P 8950 1100
+AR Path="/5BBAA756/5DE16DA3" Ref="#PWR?"  Part="1" 
+AR Path="/5BBAA756/5DD62050/5DE16DA3" Ref="#PWR?"  Part="1" 
+AR Path="/5DE16DA3" Ref="#PWR03"  Part="1" 
+F 0 "#PWR03" H 8950 850 50  0001 C CNN
+F 1 "GND" V 8950 900 50  0000 C CNN
+F 2 "" H 8950 1100 50  0001 C CNN
+F 3 "" H 8950 1100 50  0001 C CNN
+	1    8950 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE16DA9
+P 10000 1100
+AR Path="/5BBAA756/5DE16DA9" Ref="#PWR?"  Part="1" 
+AR Path="/5BBAA756/5DD62050/5DE16DA9" Ref="#PWR?"  Part="1" 
+AR Path="/5DE16DA9" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 10000 850 50  0001 C CNN
+F 1 "GND" V 10000 900 50  0000 C CNN
+F 2 "" H 10000 1100 50  0001 C CNN
+F 3 "" H 10000 1100 50  0001 C CNN
+	1    10000 1100
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
