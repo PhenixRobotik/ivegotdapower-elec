@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:ivegotdapower-elec-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 5
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -546,4 +547,16 @@ Wire Wire Line
 	4200 2100 4200 2500
 Text Notes 6650 3900 0    50   ~ 0
 Voltage divider /6\n(30V=5V, 24V=4V)
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5DC3C1A8
+P 7350 5300
+F 0 "#FLG0101" H 7350 5375 50  0001 C CNN
+F 1 "PWR_FLAG" H 7350 5473 50  0001 C CNN
+F 2 "" H 7350 5300 50  0001 C CNN
+F 3 "~" H 7350 5300 50  0001 C CNN
+	1    7350 5300
+	1    0    0    -1  
+$EndComp
+Connection ~ 7350 5300
 $EndSCHEMATC

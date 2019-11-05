@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:ivegotdapower-elec-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title ""
 Date ""
 Rev ""
@@ -13,17 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MCU_ST_STM32F3:STM32F303K8Tx U7
-U 1 1 5BC0AB78
-P 3500 3300
-F 0 "U7" H 3500 3300 50  0000 C CNN
-F 1 "STM32F303K8Tx" H 3400 3600 50  0000 C CNN
-F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 3000 2400 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00092070.pdf" H 3500 3300 50  0001 C CNN
-	1    3500 3300
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0149
 U 1 1 5BC0B1C5
@@ -38,40 +28,36 @@ $EndComp
 $Comp
 L Device:Jumper_NC_Dual JP2
 U 1 1 5BC0B448
-P 1850 2800
-F 0 "JP2" V 1896 2902 50  0000 L CNN
-F 1 "Jumper_NC_Dual" V 1805 2902 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1850 2800 50  0001 C CNN
-F 3 "~" H 1850 2800 50  0001 C CNN
-	1    1850 2800
-	0    -1   -1   0   
+P 2400 2900
+F 0 "JP2" H 2550 2950 50  0000 L CNN
+F 1 "Jumper_NC_Dual" H 2400 3050 50  0000 C CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2400 2900 50  0001 C CNN
+F 3 "~" H 2400 2900 50  0001 C CNN
+	1    2400 2900
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0150
 U 1 1 5BC0B553
-P 1850 3200
-F 0 "#PWR0150" H 1850 2950 50  0001 C CNN
-F 1 "GND" H 1855 3027 50  0000 C CNN
-F 2 "" H 1850 3200 50  0001 C CNN
-F 3 "" H 1850 3200 50  0001 C CNN
-	1    1850 3200
-	1    0    0    -1  
+P 2150 2900
+F 0 "#PWR0150" H 2150 2650 50  0001 C CNN
+F 1 "GND" V 2150 2700 50  0000 C CNN
+F 2 "" H 2150 2900 50  0001 C CNN
+F 3 "" H 2150 2900 50  0001 C CNN
+	1    2150 2900
+	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	1850 3200 1850 3050
 $Comp
 L power:+3V3 #PWR0151
 U 1 1 5BC0B629
-P 1850 2500
-F 0 "#PWR0151" H 1850 2350 50  0001 C CNN
-F 1 "+3V3" H 1865 2673 50  0000 C CNN
-F 2 "" H 1850 2500 50  0001 C CNN
-F 3 "" H 1850 2500 50  0001 C CNN
-	1    1850 2500
-	1    0    0    -1  
+P 2650 2900
+F 0 "#PWR0151" H 2650 2750 50  0001 C CNN
+F 1 "+3V3" V 2650 3100 50  0000 C CNN
+F 2 "" H 2650 2900 50  0001 C CNN
+F 3 "" H 2650 2900 50  0001 C CNN
+	1    2650 2900
+	0    1    -1   0   
 $EndComp
-Wire Wire Line
-	1850 2500 1850 2550
 $Comp
 L power:+3V3 #PWR0152
 U 1 1 5BC0C18B
@@ -141,27 +127,25 @@ $EndComp
 $Comp
 L Device:C C19
 U 1 1 5BC0D95E
-P 2650 2450
-F 0 "C19" H 2650 2550 50  0000 R CNN
-F 1 "100nF" H 2900 2350 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2688 2300 50  0001 C CNN
-F 3 "~" H 2650 2450 50  0001 C CNN
-	1    2650 2450
+P 2700 2450
+F 0 "C19" H 2700 2550 50  0000 R CNN
+F 1 "100nF" H 2950 2350 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2738 2300 50  0001 C CNN
+F 3 "~" H 2700 2450 50  0001 C CNN
+	1    2700 2450
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0157
 U 1 1 5BC0DC35
-P 2650 2300
-F 0 "#PWR0157" H 2650 2050 50  0001 C CNN
-F 1 "GND" H 2655 2127 50  0000 C CNN
-F 2 "" H 2650 2300 50  0001 C CNN
-F 3 "" H 2650 2300 50  0001 C CNN
-	1    2650 2300
+P 2700 2300
+F 0 "#PWR0157" H 2700 2050 50  0001 C CNN
+F 1 "GND" H 2705 2127 50  0000 C CNN
+F 2 "" H 2700 2300 50  0001 C CNN
+F 3 "" H 2700 2300 50  0001 C CNN
+	1    2700 2300
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1950 2800 2900 2800
 Text Label 4000 3800 0    50   ~ 0
 CAN_TX
 Text HLabel 5450 2600 2    50   Input ~ 0
@@ -205,51 +189,9 @@ F 3 "" H 4950 2150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4150 2700 4000 2700
-$Comp
-L Device:R R24
-U 1 1 5BC429B8
-P 4300 3400
-F 0 "R24" V 4400 3450 50  0000 C CNN
-F 1 "R" V 4300 3400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4230 3400 50  0001 C CNN
-F 3 "~" H 4300 3400 50  0001 C CNN
-	1    4300 3400
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:LED D15
-U 1 1 5BC42AE3
-P 4650 3400
-F 0 "D15" H 4650 3300 50  0000 C CNN
-F 1 "LED" H 4650 3500 50  0000 C CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4650 3400 50  0001 C CNN
-F 3 "~" H 4650 3400 50  0001 C CNN
-	1    4650 3400
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0171
-U 1 1 5BC42BC6
-P 4850 3400
-F 0 "#PWR0171" H 4850 3150 50  0001 C CNN
-F 1 "GND" V 4855 3272 50  0000 R CNN
-F 2 "" H 4850 3400 50  0001 C CNN
-F 3 "" H 4850 3400 50  0001 C CNN
-	1    4850 3400
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4850 3400 4800 3400
-Wire Wire Line
-	4500 3400 4450 3400
-Wire Wire Line
-	4150 3400 4000 3400
 NoConn ~ 2900 3200
 NoConn ~ 2900 3300
-NoConn ~ 2900 3900
 NoConn ~ 4000 4100
-Wire Wire Line
-	4000 2600 4950 2600
 Wire Wire Line
 	4950 2150 4950 2250
 Wire Wire Line
@@ -265,8 +207,6 @@ mes_raw
 Text HLabel 9100 3500 2    50   Input ~ 0
 mes_logic
 Wire Wire Line
-	4150 2800 4000 2800
-Wire Wire Line
 	4150 2900 4000 2900
 Text HLabel 9100 3000 2    50   Input ~ 0
 mes_rpi
@@ -275,13 +215,9 @@ mes_pow1
 Text HLabel 9100 2500 2    50   Input ~ 0
 mes_pow2
 Wire Wire Line
-	4150 3200 4000 3200
-Wire Wire Line
 	4000 3100 4150 3100
 Text HLabel 9100 1500 2    50   Input ~ 0
 mes_TSMR
-Wire Wire Line
-	4150 3300 4000 3300
 $Comp
 L Device:Buzzer BZ1
 U 1 1 5BCE8605
@@ -424,29 +360,9 @@ F 3 "~" H 4200 5950 50  0001 C CNN
 	1    4200 5950
 	-1   0    0    1   
 $EndComp
-$Comp
-L Device:Jumper_NC_Small JP1
-U 1 1 5BD0E34E
-P 2500 2600
-F 0 "JP1" H 2500 2450 50  0000 C CNN
-F 1 "Jumper_NC_Small" H 2450 2550 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2500 2600 50  0001 C CNN
-F 3 "~" H 2500 2600 50  0001 C CNN
-	1    2500 2600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2600 2600 2650 2600
-Text Label 2300 2600 2    50   ~ 0
-rst
 Text Label 4000 3700 0    50   ~ 0
 CAN_RX
-Connection ~ 2650 2600
-Wire Wire Line
-	2650 2600 2900 2600
 NoConn ~ 2900 3800
-NoConn ~ 2900 4100
-NoConn ~ 2900 4000
 Text Notes 5100 2700 0    50   ~ 0
 Résistance à ajuster (autout de 100kOhm)
 Wire Wire Line
@@ -501,8 +417,6 @@ TMS
 Text Label 4000 4000 0    50   ~ 0
 TCK
 Wire Wire Line
-	2300 2600 2400 2600
-Wire Wire Line
 	4400 5600 4200 5600
 Connection ~ 4400 5600
 Wire Wire Line
@@ -541,7 +455,7 @@ RX_1
 Text Label 1450 4800 0    50   ~ 0
 TX_1
 Text Label 1450 5400 0    50   ~ 0
-rst
+reset_swd
 $Comp
 L power:GND #PWR?
 U 1 1 5DD2AD59
@@ -549,7 +463,7 @@ P 1150 4400
 AR Path="/5DD2AD59" Ref="#PWR?"  Part="1" 
 AR Path="/5BBAA756/5DD2AD59" Ref="#PWR09"  Part="1" 
 F 0 "#PWR09" H 1150 4150 50  0001 C CNN
-F 1 "GND" H 1155 4227 50  0000 C CNN
+F 1 "GND" H 1150 4250 50  0000 C CNN
 F 2 "" H 1150 4400 50  0001 C CNN
 F 3 "" H 1150 4400 50  0001 C CNN
 	1    1150 4400
@@ -891,6 +805,117 @@ F 3 "" H 9000 4500 50  0001 C CNN
 	1    9000 4500
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Device:LED_ARGB D2
+U 1 1 5DC19FB6
+P 2200 4100
+F 0 "D2" H 2200 4500 50  0000 C CNN
+F 1 "LED_ARGB" H 2200 3750 50  0000 C CNN
+F 2 "" H 2200 4050 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs-and-downloads/leds-and-displays/ASMB-KTF0-0A306-DS100_2017-09-15.pdf" H 2200 4050 50  0001 C CNN
+	1    2200 4100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5DC1C3B7
+P 2550 3900
+F 0 "R2" V 2650 3900 50  0000 C CNN
+F 1 "91" V 2550 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2480 3900 50  0001 C CNN
+F 3 "~" H 2550 3900 50  0001 C CNN
+	1    2550 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5DC1CB70
+P 2550 4100
+F 0 "R3" V 2650 4100 50  0000 C CNN
+F 1 "27" V 2550 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2480 4100 50  0001 C CNN
+F 3 "~" H 2550 4100 50  0001 C CNN
+	1    2550 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5DC1CF28
+P 2550 4300
+F 0 "R4" V 2650 4300 50  0000 C CNN
+F 1 "39" V 2550 4300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2480 4300 50  0001 C CNN
+F 3 "~" H 2550 4300 50  0001 C CNN
+	1    2550 4300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC1D8FD
+P 2000 4100
+AR Path="/5DC1D8FD" Ref="#PWR?"  Part="1" 
+AR Path="/5BBAA756/5DC1D8FD" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H 2000 3850 50  0001 C CNN
+F 1 "GND" H 2000 3950 50  0000 C CNN
+F 2 "" H 2000 4100 50  0001 C CNN
+F 3 "" H 2000 4100 50  0001 C CNN
+	1    2000 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2900 3900 2700 3900
+Wire Wire Line
+	2900 4000 2700 4000
+Wire Wire Line
+	2700 4000 2700 4100
+Wire Wire Line
+	2900 4100 2800 4100
+Wire Wire Line
+	2800 4100 2800 4300
+Wire Wire Line
+	2800 4300 2700 4300
+NoConn ~ 4000 3400
+Text Notes 1900 4800 0    50   ~ 0
+ASMB-KTF0-0A306\nR 2.00V | 15mA | 86Ω\nG 2.95V | 15mA | 24Ω\nB 2.85V | 10mA | 35Ω
+Wire Wire Line
+	4150 3300 4000 3300
+Wire Wire Line
+	4150 3200 4000 3200
+Wire Wire Line
+	4000 2600 4950 2600
+Wire Wire Line
+	4150 2800 4000 2800
+$Comp
+L MCU_ST_STM32F3:STM32F303K8Tx U7
+U 1 1 5BC0AB78
+P 3500 3300
+F 0 "U7" H 3500 3300 50  0000 C CNN
+F 1 "STM32F303K8Tx" H 3400 3600 50  0000 C CNN
+F 2 "Package_QFP:LQFP-32_7x7mm_P0.8mm" H 3000 2400 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00092070.pdf" H 3500 3300 50  0001 C CNN
+	1    3500 3300
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1500 2400 1000 300 
+U 5DC1C42C
+F0 "reset_logic" 50
+F1 "reset_logic.sch" 50
+F2 "Reset_1" I L 1500 2500 50 
+F3 "Reset_2" I L 1500 2600 50 
+F4 "Reset_MCU" I R 2500 2600 50 
+$EndSheet
+Wire Wire Line
+	2700 2600 2900 2600
+Text Label 1500 2600 2    50   ~ 0
+reset_swd
 Text Label 2000 6400 0    50   ~ 0
-rst
+reset_can
+Text Label 1500 2500 2    50   ~ 0
+reset_can
+Wire Wire Line
+	2500 2600 2700 2600
+Connection ~ 2700 2600
+Wire Wire Line
+	2400 2800 2900 2800
 $EndSCHEMATC
