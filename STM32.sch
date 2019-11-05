@@ -149,9 +149,9 @@ $EndComp
 Text Label 4000 3800 0    50   ~ 0
 CAN_TX
 Text HLabel 5450 2600 2    50   Input ~ 0
-sense
+mes_current
 Text HLabel 2900 3600 0    50   Input ~ 0
-sense_fault
+mes_current_fault
 $Comp
 L Device:R R25
 U 1 1 5BC3338A
@@ -811,7 +811,7 @@ U 1 1 5DC19FB6
 P 2200 4100
 F 0 "D2" H 2200 4500 50  0000 C CNN
 F 1 "LED_ARGB" H 2200 3750 50  0000 C CNN
-F 2 "" H 2200 4050 50  0001 C CNN
+F 2 "LED_SMD:LED_Cree-PLCC4_2x2mm_CW" H 2200 4050 50  0001 C CNN
 F 3 "https://docs.broadcom.com/docs-and-downloads/leds-and-displays/ASMB-KTF0-0A306-DS100_2017-09-15.pdf" H 2200 4050 50  0001 C CNN
 	1    2200 4100
 	-1   0    0    -1  

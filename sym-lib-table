@@ -3,4 +3,5 @@
   (lib (name st-microelectronics)(type Legacy)(uri ${KIPRJMOD}/phenix_kicad/library/st-microelectronics.lib)(options "")(descr ""))
   (lib (name Transistor_FET_Phenix)(type Legacy)(uri ${KIPRJMOD}/phenix_kicad/library/Transistor_FET_Phenix.lib)(options "")(descr ""))
   (lib (name board_fille)(type Legacy)(uri ${KIPRJMOD}/board_fille/board_fille.lib)(options "")(descr ""))
+  (lib (name ivegotdapower-elec-rescue)(type Legacy)(uri ${KIPRJMOD}/ivegotdapower-elec-rescue.lib)(options "")(descr ""))
 )

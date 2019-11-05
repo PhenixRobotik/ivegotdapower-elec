@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 2 6
 Title ""
 Date ""
 Rev ""
@@ -21,13 +21,15 @@ Valim+
 $Comp
 L PhenixRobotik:IRFR5305 Q1
 U 1 1 5BBB7787
-P 3900 1650
-F 0 "Q1" V 4243 1650 50  0000 C CNN
-F 1 "IRFR5305" V 4152 1650 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 4100 1575 50  0001 L CIN
-F 3 "http://www.jaolen.com/images/pdf/QM6015D.pdf" V 3900 1650 50  0001 L CNN
-F 4 "543-2496" V 3900 1650 50  0001 C CNN "RS"
-	1    3900 1650
+P 3900 1700
+AR Path="/5BBB7787" Ref="Q1"  Part="1" 
+AR Path="/5BBA9DDB/5BBB7787" Ref="Q1"  Part="1" 
+F 0 "Q1" V 4243 1700 50  0000 C CNN
+F 1 "IRFR5305" V 4152 1700 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 4100 1625 50  0001 L CIN
+F 3 "http://www.jaolen.com/images/pdf/QM6015D.pdf" V 3900 1700 50  0001 L CNN
+F 4 "543-2496" V 3900 1700 50  0001 C CNN "RS"
+	1    3900 1700
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -44,13 +46,15 @@ $EndComp
 $Comp
 L PhenixRobotik:IRFR5305 Q2
 U 1 1 5BBB85C9
-P 3900 4100
-F 0 "Q2" V 4243 4100 50  0000 C CNN
-F 1 "IRFR5305" V 4152 4100 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-2" H 4100 4025 50  0001 L CIN
-F 3 "http://www.jaolen.com/images/pdf/QM6015D.pdf" V 3900 4100 50  0001 L CNN
-F 4 "543-2496" V 3900 4100 50  0001 C CNN "RS"
-	1    3900 4100
+P 3900 4150
+AR Path="/5BBB85C9" Ref="Q2"  Part="1" 
+AR Path="/5BBA9DDB/5BBB85C9" Ref="Q2"  Part="1" 
+F 0 "Q2" V 4243 4150 50  0000 C CNN
+F 1 "IRFR5305" V 4152 4150 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 4100 4075 50  0001 L CIN
+F 3 "http://www.jaolen.com/images/pdf/QM6015D.pdf" V 3900 4150 50  0001 L CNN
+F 4 "543-2496" V 3900 4150 50  0001 C CNN "RS"
+	1    3900 4150
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -107,9 +111,9 @@ Wire Wire Line
 Wire Wire Line
 	7950 5850 7800 5850
 Text HLabel 6600 6350 0    50   Input ~ 0
-sense_fault
+mes_current_fault
 Text HLabel 6800 6350 2    50   Input ~ 0
-sense
+mes_current
 Wire Wire Line
 	6600 6350 6650 6350
 Wire Wire Line
