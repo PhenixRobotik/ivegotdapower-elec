@@ -1,31 +1,32 @@
 # IveGotDaPower, dépôt électronique
 
+Carte alimentation de PhenixRobotik pour la base roulante TheySeeMeRolling.
+
 <div class="alert alert-warning">
-    This project requires KiCAD 5.0 and is not compatible with previous versions (software and libraries).
+    #This project requires KiCAD 5.0 and is not compatible with previous versions (software and libraries).
 </div>
 
-Carte alimentation de PhenixRobotik pour la base roulante TheySeeMeRolling.
+# Features
+
+* Dual power input with no-cut switch
+  * Battery 6S (24V max)
+  * Power supply
+
+
+* Multiple power outputs
+  * Power (direct, 6A)
+  * Elec (7.5V ~3A)
+  * USB (for Rpi, 2A)
+  * …
+
+* Voltage + current instrumentations
+
+* CAN bus
 
 
 # Idées
 
 * stm32f3
-  * Voltage + current instrumentations
-
-
-* IOs :
-  * Power Inputs:
-    * Battery 4/5s (+2s?)
-    * Lab alim (12/15V)
-  * Power Outputs:
-    * Power (quasi-direct, 6A)
-    * Elec (~7V, ~3A)
-    * USB (Linux board, 2A)
-    * ?
-  * LiPoBipper (équilibrage) ? (ou direct sur la batterie == plus safe ?)
-
-  * CAN bus
-  * UART ?
-  * JTAG debug
+* LiPoBipper (équilibrage) ? (ou direct sur la batterie == plus safe ?)
 
 * Bouton d'arrêt d'urgence qui coupe la puissance moteurs ?

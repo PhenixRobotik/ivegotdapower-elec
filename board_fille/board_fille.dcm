@@ -1,3 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP board_fille
+D board fille from PhenixRobotik/Ivegotdapower
+K board fille PhenixRobotik Ivegotdapower
+$ENDCMP
+#
 #End Doc Library
