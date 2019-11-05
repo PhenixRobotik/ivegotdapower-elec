@@ -1,17 +1,15 @@
-# For PCBs designed using KiCad: http://www.kicad-pcb.org/
-
-# Temporary files
-*.000
-*.bak
-*.bck
-*.kicad_pcb-bak
+# Generic temporary files
 *~
+
+# Temporary files from KiCAD
+*.000
+*-bak
+
 _autosave-*
 *.tmp
-*-cache.lib
-*-rescue.lib
-*-save.pro
-*-save.kicad_pcb
+*-cache.*
+*-rescue.*
+*-save.*
 
 # Netlist files (exported from Eeschema)
 *.net
