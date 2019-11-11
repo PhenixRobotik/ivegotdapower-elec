@@ -99,61 +99,50 @@ Text HLabel 2000 1000 0    50   Input ~ 0
 power
 Text Notes 4350 2000 2    50   ~ 0
 Logic +7.5V
-Text HLabel 5150 4400 0    50   Input ~ 0
+Text HLabel 8100 3700 0    50   Input ~ 0
 bau
 $Comp
 L Transistor_FET:BSS138 Q3
 U 1 1 5BB71757
-P 5350 4400
-F 0 "Q3" H 5555 4446 50  0000 L CNN
-F 1 "BSS138" H 5555 4355 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5550 4325 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 5350 4400 50  0001 L CNN
-	1    5350 4400
+P 8300 3700
+F 0 "Q3" H 8505 3746 50  0000 L CNN
+F 1 "BSS138" H 8505 3655 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 8500 3625 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 8300 3700 50  0001 L CNN
+	1    8300 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R30
 U 1 1 5BB7262A
-P 5450 3900
-F 0 "R30" H 5520 3946 50  0000 L CNN
-F 1 "R" H 5520 3855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5380 3900 50  0001 C CNN
-F 3 "~" H 5450 3900 50  0001 C CNN
-	1    5450 3900
+P 8400 3200
+F 0 "R30" H 8470 3246 50  0000 L CNN
+F 1 "1k" H 8470 3155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8330 3200 50  0001 C CNN
+F 3 "~" H 8400 3200 50  0001 C CNN
+	1    8400 3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0141
 U 1 1 5BB72D13
-P 5450 4600
-F 0 "#PWR0141" H 5450 4350 50  0001 C CNN
-F 1 "GND" H 5455 4427 50  0000 C CNN
-F 2 "" H 5450 4600 50  0001 C CNN
-F 3 "" H 5450 4600 50  0001 C CNN
-	1    5450 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0142
-U 1 1 5BB72E2B
-P 5450 3750
-F 0 "#PWR0142" H 5450 3600 50  0001 C CNN
-F 1 "+3.3V" H 5465 3923 50  0000 C CNN
-F 2 "" H 5450 3750 50  0001 C CNN
-F 3 "" H 5450 3750 50  0001 C CNN
-	1    5450 3750
+P 8400 3900
+F 0 "#PWR0141" H 8400 3650 50  0001 C CNN
+F 1 "GND" H 8405 3727 50  0000 C CNN
+F 2 "" H 8400 3900 50  0001 C CNN
+F 3 "" H 8400 3900 50  0001 C CNN
+	1    8400 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5450 4200 5450 4100
-Text Label 5600 4100 0    50   ~ 0
+	8400 3500 8400 3400
+Text Label 8550 3400 0    50   ~ 0
 ~on~-off
 Wire Wire Line
-	5600 4100 5450 4100
-Connection ~ 5450 4100
+	8550 3400 8400 3400
+Connection ~ 8400 3400
 Wire Wire Line
-	5450 4100 5450 4050
+	8400 3400 8400 3350
 Text HLabel 3000 1200 2    50   Input ~ 0
 RPi_mes
 Text HLabel 3000 5200 2    50   Input ~ 0
@@ -339,12 +328,6 @@ Text Label 1100 950  2    50   ~ 0
 ~on~-off
 Text Label 1100 1950 2    50   ~ 0
 ~on~-off
-Text Label 2000 3200 2    50   ~ 0
-~on~-off
-Text Label 2000 4200 2    50   ~ 0
-~on~-off
-Text Label 2000 5200 2    50   ~ 0
-~on~-off
 $Comp
 L power:GND #PWR0121
 U 1 1 5DC5D6E2
@@ -378,4 +361,199 @@ F 3 "" H 2500 5400 50  0001 C CNN
 	1    2500 5400
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DCC1ED4
+P 7500 3650
+AR Path="/5BBAA756/5DCC1ED4" Ref="#PWR?"  Part="1" 
+AR Path="/5BBAA756/5DD62050/5DCC1ED4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7500 3400 50  0001 C CNN
+F 1 "GND" H 7500 3500 50  0000 C CNN
+F 2 "" H 7500 3650 50  0001 C CNN
+F 3 "" H 7500 3650 50  0001 C CNN
+	1    7500 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DCC1EDA
+P 7500 3500
+AR Path="/5BBAA756/5DCC1EDA" Ref="D?"  Part="1" 
+AR Path="/5BBAA756/5DD62050/5DCC1EDA" Ref="D?"  Part="1" 
+F 0 "D?" V 7538 3383 50  0000 R CNN
+F 1 "LED" V 7447 3383 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7500 3500 50  0001 C CNN
+F 3 "~" H 7500 3500 50  0001 C CNN
+	1    7500 3500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DCC1EE0
+P 7500 3200
+AR Path="/5BBAA756/5DCC1EE0" Ref="R?"  Part="1" 
+AR Path="/5BBAA756/5DD62050/5DCC1EE0" Ref="R?"  Part="1" 
+F 0 "R?" H 7550 3200 50  0000 L CNN
+F 1 "R" V 7500 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7430 3200 50  0001 C CNN
+F 3 "~" H 7500 3200 50  0001 C CNN
+	1    7500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DCC1EEC
+P 6400 3200
+AR Path="/5BBAA756/5DCC1EEC" Ref="C?"  Part="1" 
+AR Path="/5BBAA756/5DD62050/5DCC1EEC" Ref="C?"  Part="1" 
+AR Path="/5BB4DEC0/5DCC1EEC" Ref="C?"  Part="1" 
+F 0 "C?" H 6400 3300 50  0000 L CNN
+F 1 "100nF" H 6400 3100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6438 3050 50  0001 C CNN
+F 3 "~" H 6400 3200 50  0001 C CNN
+	1    6400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DCC1EF2
+P 6800 3350
+AR Path="/5BBAA756/5DCC1EF2" Ref="#PWR?"  Part="1" 
+AR Path="/5BBAA756/5DD62050/5DCC1EF2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6800 3100 50  0001 C CNN
+F 1 "GND" H 6800 3200 50  0000 C CNN
+F 2 "" H 6800 3350 50  0001 C CNN
+F 3 "" H 6800 3350 50  0001 C CNN
+	1    6800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LD1117S33TR_SOT223 U?
+U 1 1 5DCC1EFE
+P 6800 3050
+AR Path="/5BBAA756/5DCC1EFE" Ref="U?"  Part="1" 
+AR Path="/5BBAA756/5DD62050/5DCC1EFE" Ref="U?"  Part="1" 
+F 0 "U?" H 6800 3292 50  0000 C CNN
+F 1 "LD1117S33TR" H 6800 3201 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 6800 3250 50  0001 C CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00000544.pdf" H 6900 2800 50  0001 C CNN
+	1    6800 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3350 6800 3350
+Connection ~ 6800 3350
+Wire Wire Line
+	6800 3350 7200 3350
+Wire Wire Line
+	6400 3050 6500 3050
+Connection ~ 6400 3050
+Wire Wire Line
+	6000 3050 6400 3050
+Text HLabel 6000 3050 0    50   Input ~ 0
+power
+Wire Wire Line
+	8400 3050 7500 3050
+Connection ~ 7500 3050
+Wire Wire Line
+	7100 3050 7200 3050
+$Comp
+L Device:C C?
+U 1 1 5DCEDF1D
+P 7200 3200
+AR Path="/5BBAA756/5DCEDF1D" Ref="C?"  Part="1" 
+AR Path="/5BBAA756/5DD62050/5DCEDF1D" Ref="C?"  Part="1" 
+AR Path="/5BB4DEC0/5DCEDF1D" Ref="C?"  Part="1" 
+F 0 "C?" H 7200 3300 50  0000 L CNN
+F 1 "100nF" H 7200 3100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 7238 3050 50  0001 C CNN
+F 3 "~" H 7200 3200 50  0001 C CNN
+	1    7200 3200
+	1    0    0    -1  
+$EndComp
+Connection ~ 7200 3050
+Wire Wire Line
+	7200 3050 7500 3050
+$Comp
+L Device:Jumper_NC_Dual JP?
+U 1 1 5DCFE165
+P 1100 3200
+F 0 "JP?" V 1146 3302 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 1055 3302 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1100 3200 50  0001 C CNN
+F 3 "~" H 1100 3200 50  0001 C CNN
+	1    1100 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DCFE16B
+P 1100 3450
+F 0 "#PWR?" H 1100 3200 50  0001 C CNN
+F 1 "GND" H 1105 3277 50  0000 C CNN
+F 2 "" H 1100 3450 50  0001 C CNN
+F 3 "" H 1100 3450 50  0001 C CNN
+	1    1100 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 3200 2000 3200
+Text Label 1100 2950 2    50   ~ 0
+~on~-off
+$Comp
+L Device:Jumper_NC_Dual JP?
+U 1 1 5DCFF07C
+P 1100 4200
+F 0 "JP?" V 1146 4302 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 1055 4302 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1100 4200 50  0001 C CNN
+F 3 "~" H 1100 4200 50  0001 C CNN
+	1    1100 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DCFF082
+P 1100 4450
+F 0 "#PWR?" H 1100 4200 50  0001 C CNN
+F 1 "GND" H 1105 4277 50  0000 C CNN
+F 2 "" H 1100 4450 50  0001 C CNN
+F 3 "" H 1100 4450 50  0001 C CNN
+	1    1100 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4200 2000 4200
+Text Label 1100 3950 2    50   ~ 0
+~on~-off
+$Comp
+L Device:Jumper_NC_Dual JP?
+U 1 1 5DCFF801
+P 1100 5200
+F 0 "JP?" V 1146 5302 50  0000 L CNN
+F 1 "Jumper_NC_Dual" V 1055 5302 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P1.3mm_Open_RoundedPad1.0x1.5mm" H 1100 5200 50  0001 C CNN
+F 3 "~" H 1100 5200 50  0001 C CNN
+	1    1100 5200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DCFF807
+P 1100 5450
+F 0 "#PWR?" H 1100 5200 50  0001 C CNN
+F 1 "GND" H 1105 5277 50  0000 C CNN
+F 2 "" H 1100 5450 50  0001 C CNN
+F 3 "" H 1100 5450 50  0001 C CNN
+	1    1100 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 5200 2000 5200
+Text Label 1100 4950 2    50   ~ 0
+~on~-off
+Text Notes 550  800  0    197  ~ 0
+LET DIP JUMPERS FOR EASY SELECTION
+Text Notes 5900 2750 0    50   ~ 0
+own power regulation for bau if 7.5V dies
 $EndSCHEMATC
