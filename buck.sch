@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:ivegotdapower-elec-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -642,7 +643,7 @@ Wire Wire Line
 	3500 6000 3600 6000
 Connection ~ 3600 6000
 Wire Wire Line
-	3600 6000 3850 6000
+	3600 6000 3750 6000
 Connection ~ 3850 6000
 Wire Wire Line
 	3850 6000 4650 6000
@@ -694,4 +695,33 @@ F 3 "" H 3850 6300 50  0001 C CNN
 $EndComp
 Text Notes 3850 5900 0    50   ~ 0
 set for 12.4V
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5DC9DC12
+P 4650 5550
+F 0 "J?" H 4730 5542 50  0000 L CNN
+F 1 "Conn_VMOS" H 4730 5451 50  0000 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_2-G-3.81_1x02_P3.81mm_Horizontal" H 4650 5550 50  0001 C CNN
+F 3 "~" H 4650 5550 50  0001 C CNN
+	1    4650 5550
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3750 5450 3750 6000
+Connection ~ 3750 6000
+Wire Wire Line
+	3750 6000 3850 6000
+Wire Wire Line
+	4450 5450 3750 5450
+$Comp
+L power:GND #PWR?
+U 1 1 5DCA10C7
+P 4450 5550
+F 0 "#PWR?" H 4450 5300 50  0001 C CNN
+F 1 "GND" H 4455 5377 50  0000 C CNN
+F 2 "" H 4450 5550 50  0001 C CNN
+F 3 "" H 4450 5550 50  0001 C CNN
+	1    4450 5550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
