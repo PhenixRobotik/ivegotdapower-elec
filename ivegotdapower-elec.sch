@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ivegotdapower-elec-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -94,17 +93,15 @@ Connection ~ 6000 5900
 Wire Wire Line
 	6000 5900 6000 6100
 Connection ~ 6000 6100
-Wire Wire Line
-	6000 6100 6000 6250
 $Comp
 L power:GND #PWR0118
 U 1 1 5BE0716D
-P 6000 6250
-F 0 "#PWR0118" H 6000 6000 50  0001 C CNN
-F 1 "GND" H 6005 6077 50  0000 C CNN
-F 2 "" H 6000 6250 50  0001 C CNN
-F 3 "" H 6000 6250 50  0001 C CNN
-	1    6000 6250
+P 6000 6500
+F 0 "#PWR0118" H 6000 6250 50  0001 C CNN
+F 1 "GND" H 6005 6327 50  0000 C CNN
+F 2 "" H 6000 6500 50  0001 C CNN
+F 3 "" H 6000 6500 50  0001 C CNN
+	1    6000 6500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -333,4 +330,20 @@ F8 "mes_pow1" I R 4000 3900 50
 F9 "mes_pow2" I R 4000 4000 50 
 F10 "mes_TSMR" I R 4000 4100 50 
 $EndSheet
+Wire Wire Line
+	6000 6100 6000 6300
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 5DCA2497
+P 6100 6300
+F 0 "H?" V 6054 6450 50  0000 L CNN
+F 1 "MountingHole_Pad" V 6145 6450 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 6100 6300 50  0001 C CNN
+F 3 "~" H 6100 6300 50  0001 C CNN
+	1    6100 6300
+	0    1    1    0   
+$EndComp
+Connection ~ 6000 6300
+Wire Wire Line
+	6000 6300 6000 6500
 $EndSCHEMATC

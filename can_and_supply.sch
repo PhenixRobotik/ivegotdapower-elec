@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ivegotdapower-elec-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -52,6 +51,7 @@ U 1 1 5DD6A9F8
 P 4700 1500
 AR Path="/5BBAA756/5DD6A9F8" Ref="J?"  Part="1" 
 AR Path="/5BBAA756/5DD62050/5DD6A9F8" Ref="J13"  Part="1" 
+AR Path="/5DD6A9F8" Ref="J13"  Part="1" 
 F 0 "J13" H 4450 1300 50  0000 L CNN
 F 1 "CAN_conn" H 4400 1200 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_S05B-XH-A_1x05_P2.50mm_Horizontal" H 4700 1150 50  0001 C CNN
@@ -67,6 +67,7 @@ U 1 1 5DD6AA00
 P 4000 1500
 AR Path="/5BBAA756/5DD6AA00" Ref="J?"  Part="1" 
 AR Path="/5BBAA756/5DD62050/5DD6AA00" Ref="J12"  Part="1" 
+AR Path="/5DD6AA00" Ref="J12"  Part="1" 
 F 0 "J12" H 3750 1300 50  0000 L CNN
 F 1 "CAN_conn" H 3700 1200 50  0000 L CNN
 F 2 "Connector_JST:JST_XH_S05B-XH-A_1x05_P2.50mm_Horizontal" H 4000 1150 50  0001 C CNN
